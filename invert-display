@@ -1,0 +1,17 @@
+#!/bin/bash
+if test -f ~/.altered-display; then
+    xcalib -c;
+    if test -f ~/.inverted-display; then
+        rm ~/.altered-display ~/.inverted-display;
+    else
+        xcalib -red 0.69 0 100 -green 0.7 0 78 -blue 0.72 0 55 -i -a;
+        mv ~/.altered-display ~/.inverted-display;
+    fi
+else
+    if test -f ~/.inverted-display; then
+        xcalib -co 60 -a;             #nighttime away from city lights
+    else
+        xcalib -gc 2.2 -a;            #high gamma for incident sunlight
+    fi;
+    touch ~/.altered-display;
+fi;
