@@ -1,9 +1,9 @@
 # invert-display
-## Quickly change display characteristics to help deal with differing external lighting conditions.
+Quickly change display characteristics to help deal with differing external lighting conditions.
 
 Invert-display provides for four display settings:
 
-  * **inverted**, when combined with a display that has no dark-colored background elements, minimizes total light output.  This is intended for use at night when you want to preserve your eyes' dark adaptation, e.g., you have a laptop mounted in your car while driving at night.  It is typically used with a dimmed backlight.
+  * **inverted:** when combined with a display that has no dark-colored background elements, minimizes total light output.  This is intended for use at night when you want to preserve your eyes' dark adaptation, e.g., you have a laptop mounted in your car while driving at night.  It is typically used with a dimmed backlight.
   
   * **dimmed-inverted:**  For the case where the backlight can't be dimmed enough, which can be the case when you are located far from city lights.
   
