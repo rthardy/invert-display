@@ -1,0 +1,2 @@
+#!/bin/bash
+xcalib -p -a | grep ^[0-9] | graph -a -T X -x 0 767 -y 0 65535 -m 0 -X "$(xcalib -l -a | tail -n 1)"
